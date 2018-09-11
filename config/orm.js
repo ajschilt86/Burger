@@ -8,7 +8,6 @@ function printQuestionMarks(num) {
     for (var i = 0; i < num; i++) {
         arr.push("?");
     }
-
     return arr.toString();
 }
 
@@ -55,12 +54,11 @@ var orm = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
     },
     updateOne: function (table, objColVals, condition, cb) {
-        var queryString = "UPDATE" = table;
+        var queryString = "UPDATE " + table;
 
         queryString += " SET ";
         queryString += objToSql(objColVals);
@@ -72,13 +70,9 @@ var orm = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
     }
 }
-
-
-
 
 module.exports = orm;
