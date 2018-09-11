@@ -2,8 +2,8 @@
 	<p>
 		{{burger_name}}
 	</p>
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devour}}Spit Up{{else}}Devour!{{/if}}
+	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+		{{#if devoured}}Devour!{{else}}Spit Up{{/if}}
 	</button>
 
 	<button class="delete-burger" data-id="{{this.id}}">Delete!</button>
