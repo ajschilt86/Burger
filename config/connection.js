@@ -14,4 +14,4 @@ if (process.env.JAWSDB_URL) {
 };
 
 connection.connect();
-module.exports = conenction;
+module.exports = connection;
